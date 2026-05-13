@@ -1,0 +1,139 @@
+
+@import url("/lib/fonts/helvetica/style.css");
+@import url("/lib/fonts/boston-angel/style.css");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+.paper {
+    background-image: url("/img/paper-texture.jpg");
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+}
+
+.primary {
+    background-color: #48389d;
+    color: white;
+}
+
+.secondary {
+    background-color: #db8300;
+    color: white;
+}
+
+.tertiary {
+    background-color: #5e3a05;
+    color: white;
+}
+
+/* navbar */
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.80);
+}
+
+.navbar li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #00000067;
+}
+
+.navbar li a img {
+    float: right;
+    height: 64px;
+}
+
+@media (min-width: 560px) {
+  .navbar {
+    padding: 10px;
+    box-shadow: 0px -8px 16px 8px #090909;
+    flex-direction: row;
+    justify-content: flex-start;
+    }
+
+    .navbar li a {
+    display: flex;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    height: 64px;
+    }
+
+
+
+}
+
+/* content and text */
+
+.content {
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Boston Angel', sans-serif;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+/* footer */
+
+.footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer h1 {
+    font-family: 'Boston Angel', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    font-size: 24px;
+}
+
+@media (min-width: 560px) {
+
+.footer {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+.contact {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact img {
+    height: 64px;
+    margin-right: 10px;
+}
+
+.contact p {
+    margin: 0;
+    padding: 0;
+}
