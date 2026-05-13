@@ -1,10 +1,20 @@
 
     
-    <ul class="navbar paper secondary">
-        <li><a href="/"><img src="/img/logo-white-no-text.png" class="logo"></a></li>
-        <li><a href="/ueber-uns/">Über uns</a></li>
-        <li><a href="/geschichte/">Geschichte</a></li>
-        <li><a href="/datenschutz/">Blog</a></li>
-        <li><a href="/datenschutz/">Medien</a></li>
-        <li><a href="/datenschutz/">Downloads</a></li>
-    </ul>
+    <div class="navbar paper secondary">
+
+        <a id="logo" href="/"><img src="/img/logo-white-no-text.png" class="icon"></a>
+    
+        <nav id="nav-items">
+            <a href="/ueber-uns/">Über uns</a>
+            <a href="/geschichte/">Geschichte</a>
+            <a href="/datenschutz/">Blog</a>
+            <a href="/datenschutz/">Medien</a>
+            <a href="javascript:doSomething();">Downloads</a>
+
+        </nav>
+
+        <a id="nav-menu" href="javascript:document.querySelector('#nav-items').classList.toggle('nav-open');">
+            <img src="/img/list.svg" class="icon">
+        </a>
+
+    </div>
