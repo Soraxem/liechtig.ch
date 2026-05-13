@@ -1,6 +1,6 @@
-<svg height="5000" width="2000" viewBox="0 0 2000 5000" xmlns="http://www.w3.org/2000/svg">
+<svg height="3000" width="3000" viewBox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
 
-        <filter xmlns="http://www.w3.org/2000/svg" style="color-interpolation-filters:sRGB" id="paper" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+        <filter xmlns="http://www.w3.org/2000/svg" style="color-interpolation-filters:sRGB" id="paper-1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
             <feColorMatrix id="feColorMatrix9289-1-6-2-2-2-4" values="0.4 0 0 0 0 0 0.4 0 0 0 0 0 0.4 0 0 0 0 0 1 0 " result="result2"/>
             <feTurbulence id="feTurbulence9291-5-5-8-8-7-7" numOctaves="5" baseFrequency="0.23000000000000001" type="fractalNoise"/>
             <feColorMatrix id="feColorMatrix9293-2-3-04-4-4-4" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 " result="result1" dy="-3.7000000000000002"/>
@@ -27,7 +27,33 @@
             <feComposite k4="0" k1="0" id="feComposite9335-6-8-6-5-5-7" in2="result17" operator="arithmetic" k2="0.7" k3="0.3"/>
         </filter>
 
-        <rect x="0" y="0" width="100%" height="100%" style="fill:rgb(226, 226, 226); filter:url(#paper)" />
+        <filter id="paper">
+    <!-- c094e94b-6ccf-4eb4-8ab8-1e07766c2c87 -->
+        <feTurbulence baseFrequency="0.2,0.7" numOctaves="10" stitchTiles="stitch" type="fractalNoise" result="noise"></feTurbulence>
+<!-- c9c79f18-2ca7-4233-b260-631edf6157e5 -->
+        <feColorMatrix values="
+            1 1 1 -0.9 0
+            1 1 1 -0.9 0
+            1 1 1 -0.9 0
+            0 0 0 0 1"
+            result="speckles" in="noise"></feColorMatrix>
+<!-- 7884f94f-2b1e-4ec8-8c05-ec29d255ee4e -->
+        <feTurbulence baseFrequency="0.002,0.0046" seed="0.4" stitchTiles="stitch" result="turbulence"></feTurbulence>
+<!-- 7853f5d6-1ece-4bd9-8505-e2e13883f88e -->
+        <feColorMatrix values="1 1 1 -0.4 0
+            1 1 1 -0.4 0
+            1 1 1 -0.4 0
+            0 0 0 0 1"
+            result="bw-turbulence" in="turbulence"></feColorMatrix>
+<!-- 9d847f7d-2c8a-4d48-b6a8-2f29b4a06565 -->
+        <feGaussianBlur stdDeviation="20" edgeMode="wrap" result="smooth-turbulence" in="bw-turbulence"></feGaussianBlur>
+<!-- 4a9bc309-1639-479c-8510-db3f83b60166 -->
+        <feComposite operator="arithmetic" k1="0.5" k3="0.5" result="turbulence-and-speckles" in="smooth-turbulence" in2="speckles"></feComposite>
+<!-- 4d042c6d-5d50-44fa-a4f3-57015fbc4565 -->
+        <feComposite operator="arithmetic" k1="0.5" k2="0.5" result="result" in="SourceGraphic" in2="turbulence-and-speckles"></feComposite>
+    </filter>
+
+        <rect x="0" y="0" width="100%" height="100%" style="fill:white; filter:url(#paper)" />
 
 
     </svg>
