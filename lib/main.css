@@ -203,8 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article img {
-    max-width: 100%;
-    max-height: 50vh;
+    max-width: calc(100% - 16px) ;
+    max-height: 40vh;
+    align-self: center;
+    width: fit-content;
     filter: sepia(25%);
     padding: 8px;
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.80);
@@ -226,18 +228,10 @@ h1, h2, h3, h4, h5, h6 {
     width: fit-content;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 1000px) {
 
 .article-list {
     grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-@media (min-width: 1200px) {
-
-.article-list {
-    grid-template-columns: repeat(3, 1fr);
 }
 
 }
