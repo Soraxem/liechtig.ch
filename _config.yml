@@ -1,3 +1,7 @@
 
 
 permalink: /:categories/:year-:month-:day/:title:output_ext
+
+collections:
+  members:
+    output: false

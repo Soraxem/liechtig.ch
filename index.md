@@ -3,9 +3,9 @@ layout: default
 title: Kommunität Liechtig
 ---
 
-# Herzlich Willkommen
+# Website befindet sich im Bau
 
-Wir sind eine Kommunität im Klettgau
+Hallo Du hast die Website der Liechtig gefunden. Sie befindet sich aber noch im aufbau.
 
 
 <button class="button paper primary">Mehr Erfaren</button>
