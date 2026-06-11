@@ -7,19 +7,19 @@
 
     {% for post in site.posts %}
 
-        <div class="article paper secondary">  
+        <div class="article paper primary-light">  
 
             {% if post.image %}
-                <img src="{{ post.image }}" class="paper article-image">
+                <img src="{{ post.image }}" class="paper article-image secondary-light">
             {% endif %}
 
             <h2 class="article-title">{{ post.title }}</h2>
             <small class="article-date">{{ post.author }} - {{ post.date | date: '%d.%m.%Y' }}</small>
             <p>{{ post.intro }}</p>
             {% if post.extern %}
-                <a class="button paper primary learn-more" href="{{ post.extern }}" target="_blank">Weiterlesen</a>
+                <a class="button paper secondary learn-more" href="{{ post.extern }}" target="_blank">Weiterlesen</a>
             {% else %}
-                <a class="button paper primary learn-more" href="{{ post.url }}">Weiterlesen</a>
+                <a class="button paper secondary learn-more" href="{{ post.url }}">Weiterlesen</a>
             {% endif %}
             
         </div>

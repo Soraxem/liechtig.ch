@@ -11,3 +11,7 @@ Hallo Du hast die Website der Liechtig gefunden. Sie befindet sich aber noch im 
 <button class="button paper primary">Mehr Erfaren</button>
 <button class="button paper secondary">Hallo Du</button>
 <a href="/" class="button paper tertiary">Home</a>
+
+<button class="button paper primary-light">Mehr Erfaren</button>
+<button class="button paper secondary-light">Hallo Du</button>
+<a href="/" class="button paper tertiary-light">Home</a>

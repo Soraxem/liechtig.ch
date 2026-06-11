@@ -1,0 +1,28 @@
+:root {
+    --primary: oklch(0.5 0.12 65);
+
+    --primary-white: oklch(1 0.02 78);
+    --primary-light: oklch(0.9 0.12 78);
+    --primary-dark: oklch(0.65 0.2 78);
+    --primary-darker: oklch(0.3 0.2 78);
+    --primary-black: oklch(0.1 0.2 78);
+
+
+    --secondary: oklch(0.5 0.19 310);
+
+    --secondary-white: oklch(1 0.03 310);
+    --secondary-light: oklch(0.9 0.2 310);
+    --secondary-dark: oklch(0.6 0.2 310);
+    --secondary-black: oklch(0.1 0.2 310);
+
+
+    --tertiary: oklch(0.5 0.19 243);
+
+    --tertiary-white: oklch(1 0.02 243);
+    --tertiary-light: oklch(0.9 0.2 243);
+    --tertiary-dark: oklch(0.6 0.2 243);
+    --tertiary-darker: oklch(0.5 0.2 243);
+    --tertiary-black: oklch(0.1 0.2 243);
+
+    --background: var(--primary-white);
+}
