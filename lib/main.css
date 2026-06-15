@@ -47,32 +47,32 @@ a, a:active, a:visited {
 
 .primary {
     background-color: var(--primary-dark);
-    color: var(--primary-white);
+    color: var(--primary-white) !important;
 }
 
 .primary-light {
     background-color: var(--primary-light);
-    color: var(--primary-black);
+    color: var(--primary-black) !important;
 }
 
 .secondary {
     background-color: var(--secondary-dark);
-    color: var(--secondary-white);
+    color: var(--secondary-white) !important;
 }
 
 .secondary-light {
     background-color: var(--secondary-light);
-    color: var(--secondary-black);
+    color: var(--secondary-black) !important;
 }
 
 .tertiary {
     background-color: var(--tertiary-dark);
-    color: var(--tertiary-white);
+    color: var(--tertiary-white) !important;
 }
 
 .tertiary-light {
     background-color: var(--tertiary-light);
-    color: var(--tertiary-black);
+    color: var(--tertiary-black) !important;
 }
 
 .button {
@@ -86,15 +86,15 @@ a, a:active, a:visited {
     text-decoration: none;
     display: inline-block;
 
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.80);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
 }
 
 .button:hover {
-    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.80);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.80);
 }
 
 .button:active {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.80);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.80);
 }
 
 @media print {
@@ -115,7 +115,7 @@ a, a:active, a:visited {
     display: flex;
     flex-direction: column;
     padding: 16px;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.80);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.80);
 }
 
 #nav-items a {
@@ -146,8 +146,8 @@ a, a:active, a:visited {
 #nav-menu {
     display: block;
     position: absolute;
-    right: 12px;
-    top: 12px;
+    right: 16px;
+    top: 16px;
 
     display: block;
     height: 56px;
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.80);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.60);
 }
 
 .article img {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
     width: fit-content;
     filter: sepia(25%);
     padding: 8px;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.80);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.60);
     margin-bottom: 8px;
 }
 
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 .member-image, .member-hover-image {
     max-width: 100%;
     max-height: 40vh;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.80));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.60));
 }
 
 .member-image {
@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 .member-info {
     position: relative;
     padding: 20px;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.80);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.60);
 }
 
 .member-title {
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.80);
+    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.60);
 }
 
 .footer h1 {
@@ -357,6 +357,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     padding: 0;
     font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 @media (min-width: 560px) {
@@ -371,6 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     padding: 10px;
     margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.60);
 }
 
 .contact img {
@@ -383,3 +386,44 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.address {
+    margin: 10px;
+}
+
+.details {
+    margin: 10px;
+    border-top: solid var(--primary-darker);
+}
+
+.details a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    padding: 16px;
+    align-content: center;
+
+    border-bottom: solid var(--primary-darker);
+}
+
+.details a:hover {
+    background-color: #00000067;
+}
+
+
+@media (min-width: 560px) {
+  
+    .details a {
+        border: none;
+    }
+
+    .details {
+        border: none;
+    }
+}
