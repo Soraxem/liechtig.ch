@@ -109,6 +109,28 @@ a, a:active, a:visited {
     }
 }
 
+.hero {
+    width: 100vw;
+    
+    /* Counteract Content Padding*/
+    position: relative;
+    left: calc(50% - 50vw);
+    margin-top: -20px; 
+    z-index: -1;
+}
+
+.hero h1 {
+    background-image: none !important;
+    margin: 0;
+    padding: 20px 0px !important;
+    background-color: #3c094588;
+    color: var(--secondary-white);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10%;
+}
+
 /* navbar */
 
 .navbar {
@@ -218,6 +240,10 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: left bottom;
 }
+
+.content img {
+    max-width: 100%;
+} 
 
 /* Articles */
 

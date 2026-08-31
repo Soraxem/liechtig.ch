@@ -3,15 +3,16 @@ layout: default
 title: Kommunität Liechtig
 ---
 
-# Website befindet sich im Bau
+{% include home-hero.html -%}
 
-Hallo Du hast die Website der Liechtig gefunden. Sie befindet sich aber noch im aufbau.
+<div class="article-list">
+    <div class="paper tertiary article">
+        <h2 class="article-title">Kommuntät ist:</h2>
+        <p>Gemeinschaft, Commitment, gemeinsame Vision, Gastfreundschaft, Leben teilen, Gottes Reich sichtbar, gemeinsam wachsen, Vorbild sein, Gemeinschaft im Glauben.</p>
+    </div>
 
-
-<button class="button paper primary">Mehr Erfaren</button>
-<button class="button paper secondary">Hallo Du</button>
-<a href="/" class="button paper tertiary">Home</a>
-
-<button class="button paper primary-light">Mehr Erfaren</button>
-<button class="button paper secondary-light">Hallo Du</button>
-<a href="/" class="button paper tertiary-light">Home</a>
+    <div class="paper tertiary article">
+        <h2 class="article-title">Wir sind:</h2>
+        <p>Junge Erwachsene Christen aus der Jungen Kirche Klettgau, die sich gegenseitig und Gott ein Commitment gegeben haben, gemeinsam Leben zu teilen und Jesus als Zentrum zu haben.</p>
+    </div>
+</div>
