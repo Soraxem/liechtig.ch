@@ -128,7 +128,7 @@ a, a:active, a:visited {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 10%;
+    bottom: 10%;
 }
 
 /* navbar */
@@ -451,5 +451,20 @@ h1, h2, h3, h4, h5, h6 {
 
     .details {
         border: none;
+    }
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 560px) {
+  
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
     }
 }
