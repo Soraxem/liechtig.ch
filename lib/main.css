@@ -302,10 +302,16 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
 }
 
-@media (min-width: 800px) {
+.cite {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-style: italic;
+}
+
+@media (min-width: 700px) {
 
     .member-list {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -313,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1000px) {
 
     .member-list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
