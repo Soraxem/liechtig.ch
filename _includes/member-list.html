@@ -14,7 +14,14 @@
 
             <div class="paper secondary member-info">
                 <h2 class="member-title">{{ member.title }}</h2>
-                <p>{{ member.intro }}</p>
+
+                {% for p in member.intro %}
+                    <p>{{ p }}</p>
+                {% endfor %}
+
+                {% if member.quote %}
+                    <cite>{{ member.quote }}</cite>
+                {% endif %}
             </div>
 
         </div>

@@ -4,8 +4,6 @@ title: Geschichte
 author: Sebastian Ebi
 ---
 
-
-
 # Eine Kommunität wird gegründet
 
 **Mitte August 2025 war es soweit:** Wir, die fünf Bewohner des Pfarrhauses Gächlingen, verkündeten, dass wir von nun an nicht mehr einfach eine WG (Wohngemeinschaft), sondern eine Kommunität mit dem Namen **Lichtung** sein wollten.
@@ -61,5 +59,3 @@ Als Gemeinschaft so zu leben, ist für uns ein grosses Geschenk. Wir wünschen u
 Und so ist die Geschichte der Lichtung noch lange nicht zu Ende. Eigentlich hat sie gerade erst begonnen.
 
 _Sebastian Ebi 23.08.2026_
-
-_1-2 Foto von der Gründung oder wie wir planen usw._
