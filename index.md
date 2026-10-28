@@ -8,7 +8,7 @@ title: Kommunität Liechtig
 <div class="article-list">
     <div class="paper tertiary article">
         <h2 class="article-title">Kommuntät ist:</h2>
-        <p>Gemeinschaft, Commitment, gemeinsame Vision, Gastfreundschaft, Leben teilen, Gottes Reich sichtbar, gemeinsam wachsen, Vorbild sein, Gemeinschaft im Glauben.</p>
+        <p>Gemeinschaft, Commitment, gemeinsame Vision, Gastfreundschaft, Leben teilen, Gottes Reich sichtbar machen, gemeinsam wachsen, Vorbild sein, Gemeinschaft im Glauben.</p>
     </div>
 
     <div class="paper tertiary article">
